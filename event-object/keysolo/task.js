@@ -17,6 +17,17 @@ class Game {
   }
 
   registerEvents() {
+    let symbol = document.querySelector('.symbol_current');
+    
+    function updatePlayer(event) {
+      if (symbol.innerText == event.key) {
+        console.log('dsadas');
+        this.success(); // я понимаю что this не должен находится в этой функции но как создать уловие находящееся в функции собятия что бы вне собятия срабатывало this.success();???
+      }
+    }
+
+    document.addEventListener('keydown', updatePlayer);
+
     /*
       TODO:
       Написать обработчик события, который откликается
