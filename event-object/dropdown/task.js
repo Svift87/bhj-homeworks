@@ -19,17 +19,3 @@ for (let a = 0; dropdown.length > a; a++) {
         });
     }
 }
-
-
-
-
-
-
-
-// Подскажите почему когда мы ищем элемент через getElementsByClassName, мне выдают массив даже если элемент на странице один, и приходится либо создавать цикл либо жестко указывать позицию элемента?
-
-// let dropdownValue = document.getElementsByClassName('dropdown__value');
-
-// dropdownValue[0].addEventListener('click', function(){
-//     console.log('dsadsads')
-// })
