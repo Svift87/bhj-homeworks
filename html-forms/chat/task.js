@@ -61,5 +61,6 @@ chatWidgetInput.addEventListener('keydown',function(){
         `;
 
         messages.innerHTML += rand;
-    }
-})
+        chatWidgetInput.value = '';
+    }    
+});
