@@ -18,18 +18,14 @@ send.addEventListener('click', function() {
 //     xhr.upload.onload = function () {
 //         progress.value = 1;
 //     }
-    send.preventDefault();
 
     let formData = new FormData(form);
     let request = new XMLHttpRequest();
 
-    request.open('POST', form.action);
-
+    request.open('POST', 'https://netology-slow-rest.herokuapp.com/upload.php');
+    
     request.addEventListener('readystatechange', function() {
-        if (this.readyState == request.DONE && this.status == 200) {
-            progress.value = 1;
-        }
+        readyState
     });
-    request.send(formData);
         
 });
